@@ -1,0 +1,31 @@
+
+  <image class='newBgTitle' src='../../images/newBgTitle.png'></image>
+
+  <!-- <view class='answerTime'>可作答时间段:</view>
+  <view  class='answerTime'>{{open_time}}</view>
+  <view  class='answerTime'>至</view>
+  <view  class='answerTime'>{{close_time}}</view> -->
+
+  <view  class='startAnswer' bindtap='startAnswer'> 
+  开始答题
+  </view> 
+
+  <view class='finishAnswer' wx:if="{{finishAnswer==true}}">
+    <image class='answer_result' src='../../images/finish.png' ></image>
+    <view class='rightNum'>答对题数：{{getScore}}</view>
+    <view class='getNum'>获得分数：{{getScore}}</view>
+  </view>
+
+    
+
+
+  <button  class='authorize' style="border:0;" wx:if="{{showMask}}"  open-type="getUserInfo" bindgetuserinfo="authorize">
+  <view class='tip'   wx:if="{{showAuthorize}}" >点击任意区域进入游戏</view>
+  </button> 
+
+  <view class='verifyTele' wx:if="{{verifyTele==true}}">
+     <input class='inputTele' type="number" bindinput="inputTele" placeholder="请输入邀请码" />
+     <view class='verify'  bindtap="verify">验证</view>
+  </view>
+
+

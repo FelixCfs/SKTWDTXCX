@@ -1,0 +1,53 @@
+<view class="top">
+  <view class='top1'>
+     <image class='userPic' src='{{rankList[0].userPic}}'></image>
+     <image class='ribbon' src='../../images/first.png'></image>
+     <view class='real_name'>{{rankList[0].nickName}}</view>
+     <view class='team_name'>{{rankList[0].team_name}}</view>
+     <view class='getScore'>
+      <view style=' text-align: center;width:100%;'>{{rankList[0].getScore}}</view>
+     </view>
+  </view>
+
+
+
+  <view class='top2'>
+    <image class='userPic' src='{{rankList[1].userPic}}'></image>
+     <image class='ribbon' src='../../images/second.png'></image>
+     <view class='real_name'>{{rankList[1].nickName}}</view>
+     <view class='team_name'>{{rankList[1].team_name}}</view>
+     <view class='getScore'>
+      <view style=' text-align: center;width:100%;'>{{rankList[1].getScore}}</view>
+     </view>
+  </view>
+
+  <view class='top3'>
+    <image class='userPic' src='{{rankList[2].userPic}}'></image>
+     <image class='ribbon' src='../../images/third.png'></image>
+     <view class='real_name'>{{rankList[2].nickName}}</view>
+     <view class='team_name'>{{rankList[2].team_name}}</view>
+     <view class='getScore'>
+      <view style=' text-align: center;width:100%;'>{{rankList[2].getScore}}</view>
+     </view>
+  </view>
+  
+  <!-- <view class='openPageTime'>打开时间:{{openPageTime}}</view>
+  <view class='closePageTime'>结束时间:{{closePageTime}}</view> -->
+
+
+</view>
+
+
+  <view class='noData'  wx:if="{{rankList.length==0}}">暂无数据</view>
+
+  <view class='content' wx:if="{{rankList.length!=0}}">
+    <view class='item'  data-index="{{index}}" wx:for="{{rankList}}" wx:if="{{index!=0&&index!=1&&index!=2}}">
+        <view style='font-size:32rpx;width:50rpx;text-align: center;'>{{index+1}}</view>
+        <image style='margin-left:20rpx;' class='contentUserPic' src='{{item.userPic}}'></image>
+        <view style='width:150rpx;text-align: center;font-size:32rpx;'>{{item.nickName}}</view>
+        <view style='width:250rpx;text-align: center;font-size:32rpx;'>{{item.team_name}}</view>
+        <view class='getScore'>
+          <view style='text-align: center;width:100%;'>{{item.getScore}}</view>
+        </view>
+    </view>
+  </view>

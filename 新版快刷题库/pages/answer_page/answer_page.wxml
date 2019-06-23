@@ -1,0 +1,21 @@
+<view class='red_top'>
+  <view class='test_name'>{{test_name}}</view>
+    
+</view> 
+
+<view class='content'>
+  <image class='cloud' src='../../images/cloud.png' ></image>
+  <image class='countdownImg' src='../../images/countdown.png'></image>
+  <view class='countdown'>{{countDownNum}}</view>
+  <view class='question_number'>{{nowQuestionNumber+1}}/{{question_number}}</view>
+  <view class='title'>{{questionList[nowQuestionNumber].title}}</view>
+  <view class='option' bindtap='chose_option' data-index="A"  wx:if="{{questionList[nowQuestionNumber].option_A}}">{{questionList[nowQuestionNumber].option_A}}</view>
+  <view class='option' bindtap='chose_option' data-index="B"  wx:if="{{questionList[nowQuestionNumber].option_B}}">{{questionList[nowQuestionNumber].option_B}}</view>
+  <view class='option' bindtap='chose_option' data-index="C" wx:if="{{questionList[nowQuestionNumber].option_C}}">{{questionList[nowQuestionNumber].option_C}}</view>
+  <view class='option' bindtap='chose_option' data-index="D"  wx:if="{{questionList[nowQuestionNumber].option_D}}">{{questionList[nowQuestionNumber].option_D}}</view>
+</view>
+
+
+  <image class='answer_result' src='../../images/true.png' wx:if="{{answerResult==true}}"></image>
+  <image class='answer_result' src='../../images/false.png' wx:if="{{answerResult==false}}"></image>
+

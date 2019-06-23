@@ -1,0 +1,117 @@
+page{
+  background-color: #f0f0f0;
+}
+
+
+.top{
+  background-color: #df543b;
+  height: 430rpx;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.openPageTime{
+  text-align: center;
+  margin-top: 370rpx;
+}
+
+.closePageTime{
+  text-align: center;
+}
+
+
+
+.content{
+  padding-top: 430rpx;
+}
+
+
+.top1{
+  height: 300rpx;
+  width: 200rpx;
+  background-color: #f8f4f4;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%,0);
+}
+
+
+.top2{
+  height: 300rpx;
+  width: 200rpx;
+  background-color: #f8f4f4;
+  position: absolute;
+  left: 50rpx;
+  top: 50rpx;
+}
+
+.top3{
+  height: 300rpx;
+  width: 200rpx;
+  background-color: #f8f4f4;
+  position: absolute;
+  right: 50rpx;
+  top: 50rpx;
+}
+.ribbon{
+  width: 180rpx;
+  height: 40rpx;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  margin-top: -20rpx;
+}
+
+.real_name,.team_name{
+  font-size: 30rpx;
+  text-align: center;
+  margin-top: 8rpx;
+  font-weight: bold;
+}
+
+.getScore{
+  width: 180rpx;
+  height: 50rpx;
+  margin-top: 10rpx;
+  line-height: 50rpx;
+  background-color: #cdcdcd;
+  border-radius: 8rpx;
+  color: #df543b;
+  font-size: 32rpx;
+  font-weight: bold;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+}
+
+.userPic{
+  border-radius: 50%;
+  height: 100rpx;
+  width: 100rpx;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  margin-top: 10rpx;
+}
+
+.contentUserPic{
+  border-radius: 50%;
+  height: 100rpx;
+  width: 100rpx;
+  display: flex;
+  margin-top: 10rpx;
+}
+
+.item{
+  display: flex;
+  align-items:center;
+  border-bottom: 1rpx solid #cdcdcd;
+  padding: 15rpx 15rpx 15rpx 0rpx;
+}
+
+.noData{
+  margin-top: 550rpx;
+  text-align: center;
+  color: #969696;
+}

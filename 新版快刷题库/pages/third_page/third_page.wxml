@@ -1,0 +1,23 @@
+<view class='top' >
+   <image class='userPic' src='{{userPic}}'></image>
+   <view class='nickName'>{{real_name}}</view>
+</view>
+
+<view class='item'>
+  <view style=' font-weight: bold; margin-right: 30rpx;'>我的团队:</view>
+  <view>{{team_name}}</view>
+</view>
+
+<view class='item'>
+  <view style=' font-weight: bold; margin-right: 30rpx;'>累计总分:</view>
+  <view>{{allScore}}</view>
+</view>
+
+<!-- <view class='item'>
+  <view style=' font-weight: bold; margin-right: 30rpx;'>总分排名:</view>
+  <view>{{rank}}</view>
+</view> -->
+
+
+
+<!-- <button type="default"  bindtap="clear0" > 分数置0 </button> -->
